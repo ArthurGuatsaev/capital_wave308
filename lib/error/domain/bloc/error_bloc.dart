@@ -25,7 +25,7 @@ class ErrorBloc extends Bloc<ErrorEvent, ErrorState> {
   }
   addErrorContent(AddErrorEvent event, Emitter<ErrorState> emit) {
     emit(state.copyWith(status: ErrorStatus.upps, message: event.message));
-    MyNavigatorManager.instance.errorPop(event.message);
+    MyNavMan.instance.errorPop(event.message);
   }
 
   addInitial(AddInitialEvent event, Emitter<ErrorState> emit) {

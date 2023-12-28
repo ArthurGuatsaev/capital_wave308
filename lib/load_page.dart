@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 
-class SplashPage extends StatefulWidget {
+class LoadPage extends StatefulWidget {
   static const String routeName = '/';
   static Route route() {
     return MaterialPageRoute(
         settings: const RouteSettings(name: routeName),
-        builder: (context) => const SplashPage());
+        builder: (context) => const LoadPage());
   }
 
-  const SplashPage({super.key});
+  const LoadPage({super.key});
 
   @override
-  State<SplashPage> createState() => _SplashPageState();
+  State<LoadPage> createState() => _LoadPageState();
 }
 
-class _SplashPageState extends State<SplashPage> {
+class _LoadPageState extends State<LoadPage> {
   double loadProgress = 0;
   late final double width;
   late double pading;

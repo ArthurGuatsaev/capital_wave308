@@ -63,12 +63,12 @@ class WinPage extends StatelessWidget {
                       context
                           .read<LessonBloc>()
                           .add(const ChangeLessonsIndexEvent(index: 0));
-                      MyNavigatorManager.instance.nextLessonPush();
+                      MyNavMan.instance.nextLessonPush();
                     } else {
                       context
                           .read<LessonBloc>()
                           .add(ChangeLessonsIndexEvent(index: state.index + 1));
-                      MyNavigatorManager.instance.nextLessonPush();
+                      MyNavMan.instance.nextLessonPush();
                     }
                   },
                   gradic: gradientButton,
@@ -78,7 +78,7 @@ class WinPage extends StatelessWidget {
             const SizedBox(height: 10),
             CalcButton(
               text: 'To main',
-              function: () => MyNavigatorManager.instance.simulatorPop(),
+              function: () => MyNavMan.instance.simulatorPop(),
               gradic: gradientButtonOff,
             ),
           ]),

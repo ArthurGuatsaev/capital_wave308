@@ -16,7 +16,7 @@ Future showModalSheetAccountPay({
         color: Colors.transparent,
         child: Container(
           decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(9), color: bgSecondColor),
+              borderRadius: BorderRadius.circular(9), color: bgColor),
           child: Padding(
             padding: const EdgeInsets.only(right: 12, left: 12, bottom: 40),
             child: Column(

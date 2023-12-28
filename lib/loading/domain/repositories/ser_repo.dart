@@ -6,7 +6,7 @@ import '../../import.dart';
 // import 'package:dio/dio.dart';
 import 'package:onesignal_flutter/onesignal_flutter.dart';
 
-class VServices {
+class ServRepo {
   final String apphudApiKey = 'app_5f4hY2dve86k66WighBrQ6kvq7Sf6H';
   final String amplitudeApiKey = '02f6da6b7aa994f6bc41b3f89a18a1e5';
   String userId = '';

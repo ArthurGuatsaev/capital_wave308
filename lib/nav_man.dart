@@ -2,9 +2,9 @@ import 'package:capital_wave/lessons/view/win_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:capital_wave/import.dart';
 
-class MyNavigatorManager {
-  MyNavigatorManager._();
-  static MyNavigatorManager instance = MyNavigatorManager._();
+class MyNavMan {
+  MyNavMan._();
+  static MyNavMan instance = MyNavMan._();
   final key = GlobalKey<NavigatorState>();
   late NavigatorState bankState;
   NavigatorState? get nav => key.currentState;
@@ -96,7 +96,7 @@ class MyNavigatorManager {
   Route onGenerateRoute(RouteSettings settings) {
     switch (settings.name) {
       case '/':
-        return SplashPage.route();
+        return LoadPage.route();
 
       case '/unwork':
         return VUnWorkOnb.route();

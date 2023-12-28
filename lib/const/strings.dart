@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-const String appName = 'Quoteq';
-const apiDomain = 'lollwert.space';
-const apiToken = '3bd711a0-a7be-4fd5-962d-9e6073b7100c';
-const zaglushka = 'lollwert.space/app/c4p1t41w4ve';
+const String myAppName = 'Capital Wave';
+const myApiDomain = 'lollwert.space';
+const myApiToken = '3bd711a0-a7be-4fd5-962d-9e6073b7100c';
+const finZag = 'lollwert.space/app/c4p1t41w4ve';
 
 const List<String> valuteList = ['EUR', 'USD', 'GBP', 'AUD', 'USD'];
 const List<String> valutePairList = [
@@ -54,11 +54,11 @@ void shareApp({required BuildContext context, required String text}) async {
   IosDeviceInfo info = await deviceInfo.iosInfo;
   if (info.model.toLowerCase().contains("ipad")) {
     Share.share(text,
-        subject: appName,
+        subject: myAppName,
         sharePositionOrigin:
             box.localToGlobal(Offset.zero) & const Size(100, 100));
   } else {
-    Share.share(text, subject: appName);
+    Share.share(text, subject: myAppName);
   }
 }
 

@@ -21,7 +21,7 @@ class LessonItem extends StatelessWidget {
             context
                 .read<LessonBloc>()
                 .add(ChangeLessonsIndexEvent(index: index));
-            MyNavigatorManager.instance.lessonPush();
+            MyNavMan.instance.lessonPush();
           },
           child: Row(children: [
             ClipRRect(

@@ -130,7 +130,7 @@ Future showModalSheetTopNFTEdit({
                             nameController.clear();
                             priceController.clear();
                             descController.clear();
-                            MyNavigatorManager.instance.simulatorPop();
+                            MyNavMan.instance.simulatorPop();
                           },
                           text: 'Create',
                           color: Colors.white,

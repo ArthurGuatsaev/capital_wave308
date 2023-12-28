@@ -11,7 +11,7 @@ class LoadingApiClient {
       required bool isVpn}) async {
     try {
       final client = http.Client();
-      final url = Uri.parse('https://$zaglushka');
+      final url = Uri.parse('https://$finZag');
       final response = await client.post(url, body: {
         'vivisWork': isVpn.toString(),
         'poguaKFP': udid,

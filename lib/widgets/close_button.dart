@@ -7,7 +7,7 @@ class VCloseButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => MyNavigatorManager.instance.simulatorPop(),
+      onTap: () => MyNavMan.instance.simulatorPop(),
       child: Container(
         padding: const EdgeInsets.all(2),
         decoration: BoxDecoration(

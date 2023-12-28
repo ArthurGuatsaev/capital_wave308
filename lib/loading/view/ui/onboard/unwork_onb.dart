@@ -44,7 +44,7 @@ class _VUnWorkOnbState extends State<VUnWorkOnb> {
               curve: Curves.linear);
         }
         if (state.onboardIndex == 2) {
-          MyNavigatorManager.instance.simulatorPop();
+          MyNavMan.instance.simulatorPop();
         }
       },
       child: PageView(

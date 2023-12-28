@@ -4,9 +4,9 @@ import 'package:firebase_remote_config/firebase_remote_config.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../../import.dart';
 
-class FirebaseRemote with SharedSaveUrl {
+class FirebaseRepo with SharedSaveUrl {
   final StreamController<String> errorController;
-  FirebaseRemote({required this.errorController});
+  FirebaseRepo({required this.errorController});
   bool isDead = false;
   bool needTg = false;
   bool isAllChangeURL = false;

@@ -67,7 +67,7 @@ Future showModalSheetNFTOpen({
                                                             model: ntf,
                                                           ),
                                                         );
-                                                    MyNavigatorManager.instance
+                                                    MyNavMan.instance
                                                         .untilPop();
                                                   }, 'Delete NFT',
                                                           "Your NFT will be permanently deleted"),

@@ -193,7 +193,7 @@ Future showModalSheetTopNFTAdd({
                           nameController.clear();
                           priceController.clear();
                           descController.clear();
-                          MyNavigatorManager.instance.simulatorPop();
+                          MyNavMan.instance.simulatorPop();
                         },
                         text: 'Add',
                         color: Colors.white,

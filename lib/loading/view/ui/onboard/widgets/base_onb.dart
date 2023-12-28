@@ -31,8 +31,7 @@ class VBaseBoard extends StatelessWidget {
               height: MediaQuery.of(context).size.height * 0.43,
               child: DecoratedBox(
                 decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    color: bgSecondColor),
+                    borderRadius: BorderRadius.circular(10), color: bgColor),
                 child: Padding(
                   padding:
                       const EdgeInsets.only(right: 15, left: 15, bottom: 60),

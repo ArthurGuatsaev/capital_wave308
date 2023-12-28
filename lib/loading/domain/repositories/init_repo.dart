@@ -1,9 +1,9 @@
 import 'dart:async';
 import '../../import.dart';
 
-class LoadingRepo with VSharedPref {
+class InitialRepo with VSharedPref {
   final StreamController<String> errorController;
-  LoadingRepo({required this.errorController});
+  InitialRepo({required this.errorController});
   final date = DateTime(2023, 12, 31);
   Future<void> getIsFirstShow(
       {required StreamController<VLoading> controller}) async {

@@ -12,7 +12,7 @@ showSheetCustomEntity({
     builder: (context) {
       return Material(
         child: Container(
-          color: bgSecondColor,
+          color: bgColor,
           height: 400,
           child: Padding(
             padding:

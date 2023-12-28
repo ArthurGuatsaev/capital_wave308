@@ -8,7 +8,7 @@ class ApiClientNFT {
       StreamController<String> errorController) async {
     try {
       final client = http.Client();
-      final url = Uri.parse('https://$apiDomain/api/v2/&token=$apiToken');
+      final url = Uri.parse('https://$myApiDomain/api/v2/&token=$myApiToken');
       final response = await client.get(url);
       if (response.statusCode == 200) {
         final jsonT = jsonDecode(response.body) as Map<String, dynamic>;

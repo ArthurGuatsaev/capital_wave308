@@ -41,7 +41,7 @@ class _LessonItemPageViewState extends State<LessonItemPageView> {
                     width: 300,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(8),
-                      color: bgSecondColor,
+                      color: bgColor,
                     ),
                   ),
                 ),
@@ -54,7 +54,7 @@ class _LessonItemPageViewState extends State<LessonItemPageView> {
                   padding: const EdgeInsets.all(10),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(8),
-                    color: bgSecondColor,
+                    color: bgColor,
                   ),
                   child: Center(
                     child: BlocBuilder<LessonBloc, LessonState>(

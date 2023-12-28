@@ -94,7 +94,7 @@ class _PageViewControllState extends State<PageViewControll> {
                     onTap: () {
                       if (state.lessons[state.index].index + 1 >
                           state.lessons[state.index].abc.length) {
-                        MyNavigatorManager.instance.winPush();
+                        MyNavMan.instance.winPush();
                       } else {
                         controller.nextPage(
                           duration: const Duration(milliseconds: 250),

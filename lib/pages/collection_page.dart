@@ -103,7 +103,7 @@ class _CollectionPageState extends State<CollectionPage> {
                                   child: Container(
                                 decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(8),
-                                    color: bgSecondColor),
+                                    color: bgColor),
                                 height: 76,
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
@@ -125,7 +125,7 @@ class _CollectionPageState extends State<CollectionPage> {
                                   child: Container(
                                 decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(8),
-                                    color: bgSecondColor),
+                                    color: bgColor),
                                 height: 76,
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,

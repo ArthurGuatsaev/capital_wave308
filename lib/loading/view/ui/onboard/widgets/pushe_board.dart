@@ -74,7 +74,7 @@ class VBoardPush extends StatelessWidget {
                         height: 48,
                         child: CalcButton(
                             text: buttonText,
-                            function: MyNavigatorManager.instance.simulatorPop,
+                            function: MyNavMan.instance.simulatorPop,
                             fontSize: 16,
                             color: Colors.white.withOpacity(0.7),
                             gradic: _gradient,

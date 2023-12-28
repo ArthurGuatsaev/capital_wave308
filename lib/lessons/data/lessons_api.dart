@@ -11,8 +11,8 @@ class LessonApiClient {
         connectTimeout: const Duration(seconds: 7),
         receiveTimeout: const Duration(seconds: 7),
       ));
-      final response = await x
-          .get('https://$apiDomain/api/v2/lessons/?lang=en&token=$apiToken');
+      final response = await x.get(
+          'https://$myApiDomain/api/v2/lessons/?lang=en&token=$myApiToken');
       if (response.statusCode == 200) {
         final lessons = response.data!['results'] as List<dynamic>;
         final newLesson =

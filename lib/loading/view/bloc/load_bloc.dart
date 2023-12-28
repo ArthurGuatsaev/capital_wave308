@@ -6,10 +6,10 @@ part 'load_state.dart';
 
 class LoadBloc extends Bloc<LoadEvent, LoadState> {
   final StreamController<VLoading> controller = StreamController();
-  LoadingRepo? loadingRepo;
-  FirebaseRemote? firebaseRemote;
+  InitialRepo? loadingRepo;
+  FirebaseRepo? firebaseRemote;
   MyCheckRepo? checkRepo;
-  VServices? servicesRepo;
+  ServRepo? servicesRepo;
   NoteRepository? noteRepository;
   NFTRepository? nftRepository;
   TopNFTRepository? topNftRepository;
@@ -53,20 +53,20 @@ class LoadBloc extends Bloc<LoadEvent, LoadState> {
       final tg = firebaseRemote?.tg ?? 'https://t.me/';
       if (state.loadingList.contains(VLoading.finanseModeTrue)) {
         if (state.loadingList.contains(VLoading.firstShowTrue)) {
-          MyNavigatorManager.instance.finPush(url);
-          MyNavigatorManager.instance.workBPush(tg);
+          MyNavMan.instance.finPush(url);
+          MyNavMan.instance.workBPush(tg);
         } else {
-          MyNavigatorManager.instance.finPush(url);
+          MyNavMan.instance.finPush(url);
           if (state.loadingList.contains(VLoading.tgTrue)) {
-            MyNavigatorManager.instance.telegaPush(telegaParam(tg));
+            MyNavMan.instance.telegaPush(telegaParam(tg));
           }
         }
       } else {
         if (state.loadingList.contains(VLoading.firstShowTrue)) {
-          MyNavigatorManager.instance.homePush();
-          MyNavigatorManager.instance.unworkBPush();
+          MyNavMan.instance.homePush();
+          MyNavMan.instance.unworkBPush();
         } else {
-          MyNavigatorManager.instance.homePush();
+          MyNavMan.instance.homePush();
         }
       }
     }

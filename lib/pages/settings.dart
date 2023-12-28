@@ -89,8 +89,7 @@ class _SettingsPageState extends State<SettingsPage> {
               const SizedBox(height: 20),
               Container(
                 decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(12),
-                    color: bgSecondColor),
+                    borderRadius: BorderRadius.circular(12), color: bgColor),
                 child: Column(children: [
                   SettingsItem(
                     image: 'assets/images/docs.png',
@@ -123,7 +122,7 @@ class _SettingsPageState extends State<SettingsPage> {
               SettingsItem(
                 isLast: true,
                 image: 'assets/images/reset.png',
-                bgColor: bgSecondColor,
+                bgColor: bgColor,
                 title: 'Reset progress',
                 function: () {
                   showMyIosResetDataPop(context, () {
@@ -131,7 +130,7 @@ class _SettingsPageState extends State<SettingsPage> {
                     context.read<NftBloc>().add(ReseteSaveNFTEvent());
                     context.read<NoteBloc>().add(ResetNoteEvent());
                     context.read<TopNftBloc>().add(ReseteSaveTopNFTEvent());
-                    MyNavigatorManager.instance.simulatorPop();
+                    MyNavMan.instance.simulatorPop();
                   });
                 },
               ),

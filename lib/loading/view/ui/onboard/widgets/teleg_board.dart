@@ -35,8 +35,7 @@ class VBoardTelega extends StatelessWidget {
               height: MediaQuery.of(context).size.height * 0.43,
               child: DecoratedBox(
                 decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    color: bgSecondColor),
+                    borderRadius: BorderRadius.circular(10), color: bgColor),
                 child: Padding(
                   padding:
                       const EdgeInsets.only(right: 15, left: 15, bottom: 60),
@@ -96,7 +95,7 @@ final _gradient = LinearGradient(colors: [
 VBoardParam telegaParam(String url) => VBoardParam(
       tg: url,
       image: 'assets/images/telega.png',
-      function: () => MyNavigatorManager.instance.simulatorPop(),
+      function: () => MyNavMan.instance.simulatorPop(),
       title: 'Join and earn',
       body: 'Join our Telegram group trade with our team',
       buttonText: 'Skip',

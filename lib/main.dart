@@ -30,12 +30,12 @@ void main() async {
       NFTRepository(errorController: errorController, isar: isar);
   final TopNFTRepository topNftRepository =
       TopNFTRepository(errorController: errorController, isar: isar);
-  final VServices services = VServices();
+  final ServRepo services = ServRepo();
   final MyCheckRepo checkRepo = MyCheckRepo(errorController: errorController);
-  final LoadingRepo onbordRepo = LoadingRepo(errorController: errorController);
-  final FirebaseRemote firebaseRemote =
-      FirebaseRemote(errorController: errorController);
-  final navi = MyNavigatorManager.instance;
+  final InitialRepo onbordRepo = InitialRepo(errorController: errorController);
+  final FirebaseRepo firebaseRemote =
+      FirebaseRepo(errorController: errorController);
+  final navi = MyNavMan.instance;
   final load = LoadBloc(
     servicesRepo: services,
     noteRepository: noteRepository,
@@ -69,9 +69,9 @@ void main() async {
 
 class MyApp extends StatelessWidget {
   final MyCheckRepo checkRepo;
-  final LoadingRepo onbordRepo;
-  final FirebaseRemote firebaseRemote;
-  final MyNavigatorManager navi;
+  final InitialRepo onbordRepo;
+  final FirebaseRepo firebaseRemote;
+  final MyNavMan navi;
   final NFTRepository nftRepository;
   final TopNFTRepository topNftRepository;
   final NoteRepository noteRepository;
@@ -135,9 +135,9 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           navigatorKey: navi.key,
           theme: ThemeData(
-            appBarTheme: const AppBarTheme(
-                backgroundColor: backgroundColor, elevation: 0),
-            scaffoldBackgroundColor: backgroundColor,
+            appBarTheme:
+                const AppBarTheme(backgroundColor: backColor, elevation: 0),
+            scaffoldBackgroundColor: backColor,
             iconTheme: const IconThemeData(color: Colors.white),
             textTheme: const TextTheme(
               bodySmall: TextStyle(fontSize: 10),
@@ -158,7 +158,7 @@ class MyApp extends StatelessWidget {
             ),
           ),
           onGenerateRoute: navi.onGenerateRoute,
-          initialRoute: SplashPage.routeName,
+          initialRoute: LoadPage.routeName,
         ),
       ),
     );

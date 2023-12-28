@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-const backgroundColor = Color(0xFF11141A);
+const backColor = Color(0xFF11141A);
 const itemColor = Color(0xFF1F212D);
-const bgSecondColor = Color(0xFF1F212D);
+const bgColor = Color(0xFF1F212D);
 const primary = Color(0xFFFF7E2E);
 const gradientButton = LinearGradient(colors: [
   Color(0xFFFF7E2E),

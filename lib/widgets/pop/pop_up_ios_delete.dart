@@ -26,7 +26,7 @@ Future<void> showMyIosResetDataPop(BuildContext context, Function() func) {
           ]),
           actions: [
             CupertinoDialogAction(
-                onPressed: () => MyNavigatorManager.instance.simulatorPop(),
+                onPressed: () => MyNavMan.instance.simulatorPop(),
                 child: const Text(
                   'Cancel',
                   style: TextStyle(
@@ -75,7 +75,7 @@ Future<void> showMyIosDeleteDataPop(
           ]),
           actions: [
             CupertinoDialogAction(
-                onPressed: () => MyNavigatorManager.instance.simulatorPop(),
+                onPressed: () => MyNavMan.instance.simulatorPop(),
                 child: const Text(
                   'Cancel',
                   style: TextStyle(
@@ -127,7 +127,7 @@ Future<void> showErrorPop(
           actions: [
             CupertinoDialogAction(
               child: const Text('OK'),
-              onPressed: () => MyNavigatorManager.instance.simulatorPop(),
+              onPressed: () => MyNavMan.instance.simulatorPop(),
             )
           ],
         ),
@@ -154,7 +154,7 @@ Future<void> showPopAllStudied(BuildContext context, String category) {
             CupertinoDialogAction(
               child: const Text('Restart'),
               onPressed: () {
-                MyNavigatorManager.instance.simulatorPop();
+                MyNavMan.instance.simulatorPop();
               },
             )
           ],
